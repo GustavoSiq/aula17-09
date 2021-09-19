@@ -1,0 +1,174 @@
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09
+$ git init
+Initialized empty Git repository in C:/Users/Gustavo AS/Desktop/Repositorios/aula17-09/.git/
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git add .
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.txt.txt
+
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git remote add origin https://github.com/GustavoSiq/aula17-09.git
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/GustavoSiq/aula17-09.git'
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git commit -m "Primeiro Commit da Atividade"
+[master (root-commit) a1d0d48] Primeiro Commit da Atividade
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt.txt
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git remote add origin https://github.com/GustavoSiq/aula17-09.git
+error: remote origin already exists.
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 266 bytes | 133.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/GustavoSiq/aula17-09.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt.txt
+        frase.txt.txt
+        fruta.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git add frase.txt.txt
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   frase.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt.txt
+        fruta.txt.txt
+
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   frase.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt.txt
+        fruta.txt.txt
+
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git commit -m "adicionando o arquivo frases.txt"
+[master 7e6bd4f] adicionando o arquivo frases.txt
+ 1 file changed, 7 insertions(+)
+ create mode 100644 frase.txt.txt
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/GustavoSiq/aula17-09.git
+   a1d0d48..7e6bd4f  master -> master
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt.txt
+        fruta.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt.txt
+        fruta.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git add .
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   cor.txt.txt
+        new file:   fruta.txt.txt
+
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git commit -m "adicionando os arquivos cor.txt e fruta.txt"
+[master 4bf2ec5] adicionando os arquivos cor.txt e fruta.txt
+ 2 files changed, 7 insertions(+)
+ create mode 100644 cor.txt.txt
+ create mode 100644 fruta.txt.txt
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 418 bytes | 418.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/GustavoSiq/aula17-09.git
+   7e6bd4f..4bf2ec5  master -> master
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Gustavo AS@Gustavo MINGW64 ~/Desktop/Repositorios/aula17-09 (master)
+$
