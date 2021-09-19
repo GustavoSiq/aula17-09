@@ -1,0 +1,1 @@
+Resolvendo questões do dia 17/09
